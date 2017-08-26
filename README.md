@@ -1,5 +1,5 @@
 # simpleNN
-An easy to use fully connected neural network library (matlab).
+An easy to use fully connected neural network library. Also see on [Matlab File Exchange](https://uk.mathworks.com/matlabcentral/fileexchange/64247-simple-neural-network).
 
 ## Example usages
 ### Basic
