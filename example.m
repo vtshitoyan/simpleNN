@@ -18,13 +18,15 @@ nnOptions = {};
 %% Learning
 modelNN = learnNN(testData.X, testData.y, nnOptions);
 % plotting the confusion matrix for the validation set
+figure(1); cla(gca);
 plotConfMat(modelNN.confusion_valid);
 
 %% Predicting on a random image
 rI = randi(size(testData.X, 1)); % a random index
 p = predictNN(testData.X(rI,:), modelNN); % the prediction
 
-figure(1); cla(gca);
+figure(2); cla(gca);
 imagesc(reshape(testData.X(rI,:), 20, 20)); % plotting
+colormap(flipud(gray));
 title(sprintf('Actual: %d, Predicted: %d', ...
     mod(testData.y(rI), 10), mod(p, 10))); % index for number 0 is 10
