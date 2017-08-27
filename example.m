@@ -2,7 +2,7 @@ clear; close all; clc;
 
 %% Setting up
 % loading example data
-testData = load('data/zero_to_ten_numbers.mat'); % numbers 0 to 9
+testData = load('data/zero_to_nine_numbers.mat'); % numbers 0 to 9
 
 % using the default options
 nnOptions = {};
