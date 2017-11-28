@@ -174,7 +174,7 @@ end
 
 % filling in model params
 modelNN.confusion_valid = confusion_valid;
-modelNN.confusion_train = confusion_valid;
+modelNN.confusion_train = confusion_train;
 modelNN.nnMu = nnMu;
 modelNN.nnSigma = nnSigma;
 modelNN.trainingTimestamp = datestr(now,'yy_mm_dd_HH_MM_SS');
