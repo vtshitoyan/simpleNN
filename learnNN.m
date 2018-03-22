@@ -11,9 +11,9 @@ function modelNN = learnNN(X, Y, varargin)
 %   26/08/2017
 %
 %   Input parameters
-%   X:                  The feature matrix [f x m], where f is the number of
+%   X:                  The feature matrix [m x f], where f is the number of
 %                       features, and m is the number of training examples
-%   Y:                  The vector of labels [1 x m]
+%   Y:                  The vector of labels [m x 1]
 %   nnOptions:          Options specified as pairs of values
 %                       'lambda' - regularisaton parameter (numeric). The
 %                       default is 0.
