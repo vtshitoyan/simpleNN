@@ -1,4 +1,5 @@
 clear; close all; clc;
+addpath('lib')
 
 %% Setting up
 % loading example data
